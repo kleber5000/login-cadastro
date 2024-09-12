@@ -1,0 +1,90 @@
+/* Estilos principais da página */
+body {
+  background-color: #121212; /* Cor de fundo escura do Spotify */
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Centralizar no eixo vertical */
+}
+
+/* Container do formulário de login/registro */
+.login-container, .register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background-color: #181818; /* Fundo levemente mais claro */
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 20px 0; /* Espaço entre o container e as bordas da página */
+}
+
+/* Título do formulário */
+.login-container h2, .register-container h2 {
+  font-size: 2rem; /* Ajuste no tamanho da fonte */
+  font-weight: 700;
+  color: #1db954; /* Cor verde característica do Spotify */
+  margin-bottom: 20px;
+}
+
+/* Estilo dos campos de input */
+.login-container input, .register-container input {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 10px 0;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 25px; /* Borda arredondada */
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; /* Garante que o padding seja incluído no width */
+}
+
+.login-container input:focus, .register-container input:focus {
+  outline: none;
+  border-color: #1db954; /* Bordas verdes ao focar no campo */
+}
+
+/* Estilo do botão de login/registro */
+.login-container button, .register-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #1db954; /* Cor verde do Spotify */
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover, .register-container button:hover {
+  background-color: #1aa34a; /* Tom mais escuro de verde ao passar o mouse */
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 500px) {
+  .login-container, .register-container {
+    padding: 20px; /* Reduzir o padding em telas menores */
+  }
+
+  .login-container h2, .register-container h2 {
+    font-size: 1.5rem; /* Diminuir o título em telas pequenas */
+  }
+
+  .login-container button, .register-container button {
+    font-size: 1rem; /* Ajustar o tamanho da fonte dos botões */
+  }
+}
