@@ -1,6 +1,6 @@
-# Meu Projeto
+# Projeto Login e Cadastro
 
-Tela de login e cadastro, criada usando as tecnologias:
+Projeto de login e cadastro, criada usando as tecnologias:
   * React
   * Springboot
   * PostgreSQL
